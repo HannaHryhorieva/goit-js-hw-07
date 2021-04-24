@@ -8,11 +8,11 @@ countAmountCategories(topList);
 
 const headAndCountCategories = function (topElement) {
     const categories = topElement.querySelectorAll('.item');
-    for (const categorie of [...categories]) {
-        const headCategorie = categorie.querySelector('h2').textContent;
-        console.log(`Категория: ${headCategorie}.`);
-        const countCategorie = categorie.querySelectorAll('li').length;
-        console.log(`Количество элементов: ${countCategorie}.`);
+    for (const category of [...categories]) {
+        const headCategories = category.querySelector('h2').textContent;
+        console.log(`Категория: ${headCategories}.`);
+        const countCategories = category.querySelectorAll('li').length;
+        console.log(`Количество элементов: ${countCategories}.`);
     }
 };
 headAndCountCategories(topList);

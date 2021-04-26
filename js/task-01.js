@@ -8,12 +8,12 @@ countAmountCategories(topList);
 
 const headAndCountCategories = function (topElement) {
     const categories = topElement.querySelectorAll('.item');
-    for (const category of [...categories]) {
+    [...categories].forEach(category => {
         const headCategories = category.querySelector('h2').textContent;
         console.log(`Категория: ${headCategories}.`);
         const countCategories = category.querySelectorAll('li').length;
         console.log(`Количество элементов: ${countCategories}.`);
-    }
+    })
 };
 headAndCountCategories(topList);
  
